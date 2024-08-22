@@ -3,9 +3,9 @@ import "@/scss/styles.css";
 import { Image } from "astro:assets";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-// タイトル等をPropsとして受け取る。指定がない場合のデフォルト値を設定しておく。
+// タイトル等をPropsとして受け取る。
 let { title, description, og_image } = Astro.props;
-
+//　指定がない場合のデフォルト値を設定しておく。
 if (!title) {
   title = "";
 }
