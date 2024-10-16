@@ -25,6 +25,8 @@ astro.config.mjs
 │
 package.json
 │
+package-lock.json
+│
 tailwind.config.mjs
 │
 tsconfig.json
