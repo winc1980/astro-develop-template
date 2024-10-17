@@ -37,9 +37,10 @@ tsconfig.json
 ### 新しいプロジェクトを始めるとき
 1. Download ZIPをクリックしてZIPファイルをダウンロードする![](/public/assets/capture1.png)
 2. ダウンロードしたZIPファイルを解凍し、フォルダ名を任意の名前に変更する。
-3. ダウンロードしたフォルダはGitリポジトリになっていないので、ローカルでGitリポジトリにする。[(手順詳細)](https://quartz-broker-36d.notion.site/Git-git-init-12155209844380dc9dedc04db34f84fa?pvs=4)<br />**【案件の場合】リモートに作るリポジトリは先方のorganizationの中に作り、そのリポジトリをwinc1980のOrganizationでフォークして開発すること**。以下参考資料。
-   * [GitHubで新規organizationを作成する](https://quartz-broker-36d.notion.site/GitHub-Organization-1215520984438061895cfa08978cbbf0?pvs=4)
+3. ダウンロードしたフォルダはGitリポジトリになっていないので、ローカルでGitリポジトリにする。[(手順詳細)](https://quartz-broker-36d.notion.site/Git-git-init-12155209844380dc9dedc04db34f84fa?pvs=4)<br />**【案件の場合】リモートに作るリポジトリは先方のOrganizationの中に作り、そのリポジトリをwinc1980のOrganizationにフォークして開発すること**。以下参考資料。
+   * [GitHubで新規Organizationを作成する](https://quartz-broker-36d.notion.site/GitHub-Organization-1215520984438061895cfa08978cbbf0?pvs=4)
    * [案件開発用のリポジトリを作る](https://quartz-broker-36d.notion.site/121552098443805bb20bc406c8b31fb6?pvs=4)
+   * [案件でForkしたリポジトリ上で開発する際の作業手順](https://quartz-broker-36d.notion.site/Fork-12255209844380af8a45c299a2a44f3d?pvs=4)
 
 ### コーディングの仕方
 #### 1. TOPページのコーディングをする
