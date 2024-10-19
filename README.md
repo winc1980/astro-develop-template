@@ -35,6 +35,7 @@ tsconfig.json
 
 ## このリポジトリの使い方
 ### 新しいプロジェクトを始めるとき
+※この作業はプロジェクトごとに一回だけで大丈夫です。コーダーはやらなくていいです。
 1. Download ZIPをクリックしてZIPファイルをダウンロードする![](/public/assets/capture1.png)
 2. ダウンロードしたZIPファイルを解凍し、フォルダ名を任意の名前に変更する。
 3. ダウンロードしたフォルダはGitリポジトリになっていないので、ローカルでGitリポジトリにする。[(手順詳細)](https://quartz-broker-36d.notion.site/Git-git-init-12155209844380dc9dedc04db34f84fa?pvs=4)<br />**【案件の場合】リモートに作るリポジトリは先方のOrganizationの中に作り、そのリポジトリをwinc1980のOrganizationにフォークして開発すること**。以下参考資料。
