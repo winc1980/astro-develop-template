@@ -14,5 +14,10 @@ export default defineConfig({
   build: {
     format: "preserve" // NOTE: 出力ファイルの設定
   },
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  // Astroを実行したときにブラウザが自動でサーバーを開く
+  server: {
+    host: true,
+    open: true,
+  },
 });
