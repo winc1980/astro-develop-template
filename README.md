@@ -31,7 +31,7 @@ tsconfig.json
 ```
 ディレクトリ構成は以上のようになっています。``/src/pages/index.astro``がサイトのTOPページに相当します。
 フレームワークはAstro.js、CSSフレームワークはTailwind CSSを使用しています。TypeScriptを使用できるようにしています。CMSにはmicroCMSを使う想定です。<br />
-※libフォルダにmicroCMSの設定ファイルであるmicrocms.tsを作っていますが、まだ何も書いていないので、セットアップは各自で行ってください。[(参考資料)](https://blog.microcms.io/astro-microcms-introduction/)
+※``/src/lib/microcms.ts``でのmicroCMSのセットアップは[このドキュメント](https://blog.microcms.io/astro-microcms-introduction/)を参考に各自で行ってください。
 
 ## このリポジトリの使い方
 ### 新しいプロジェクトを始めるとき
