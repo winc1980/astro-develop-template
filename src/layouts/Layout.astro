@@ -4,8 +4,16 @@ import { Image } from "astro:assets";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 // タイトル等をPropsとして受け取る。
-let { title = "", description = "", og_image = "" } = Astro.props;
+let { title, description, og_image } = Astro.props;
+// タイトル等が空の場合やnullの場合に代入するデフォルト値を設定
+title = title || "デフォルト値";
+description = description || "デフォルト値";
+// サイトのベースURLを設定 例）https://web-team.winc.ne.jp/ ←末尾にバックスラッシュが必要
+const baseURL = "サイトのベースURL";
+// OGP画像を設定する。OGP画像はhttpsから始まる絶対パスで指定する必要があるので、baseURLを代入する。
+og_image = og_image || baseURL + "デフォルト画像へのパス";
 ---
+
 <!doctype html>
 <html lang="ja">
   <head>
@@ -14,19 +22,19 @@ let { title = "", description = "", og_image = "" } = Astro.props;
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="" />
+    <meta property="og:site_name" content="" /> {/* サイトの名前を設定する。例）早稲田コンピュータ研究会・WINC Webチーム */}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={Astro.url} />
     <meta property="og:image" content={og_image} />
-    <meta name="twitter:site" content="" />
+    <meta name="twitter:site" content="" /> {/* @で始まるTwitterユーザーIDをここに記述 */}
     <meta name="twitter:url" content={Astro.url} />
-    <meta name="twitter:title" content="" />
+    <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:image" content={og_image} />
-    <link rel="icon" sizes="32x32" type="image/png" href="" />
-    <link rel="shortcut icon" href="" />
+    <link rel="icon" sizes="32x32" href="" /> {/* faviconのパスを指定する。例）public直下にfavicon.icoファイルを設置した場合→/favicon.ico */}
+    <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
     <Header />

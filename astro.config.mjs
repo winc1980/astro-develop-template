@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
-
 import tailwind from "@astrojs/tailwind";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,10 +14,10 @@ export default defineConfig({
   build: {
     format: "preserve" // NOTE: 出力ファイルの設定
   },
-  integrations: [tailwind()],
+  integrations: [tailwind(), sitemap()],
   // Astroを実行したときにブラウザが自動でサーバーを開く
   server: {
     host: true,
-    open: true,
-  },
+    open: true
+  }
 });
